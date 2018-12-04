@@ -1,0 +1,22 @@
+{
+	"items": [
+		{
+			"name": "activityId",
+			"type": "java.lang.Long",
+			"required": true,
+			"description": "参与的活动ID"
+		},
+		{
+			"name": "carType",
+			"type": "java.lang.String",
+			"required": true,
+			"description": "填入报名车型"
+		},
+		{
+			"name": "remark",
+			"type": "java.lang.String",
+			"required": false,
+			"description": "附言"
+		}
+	]
+}

@@ -1,0 +1,34 @@
+{
+	"items": [
+		{
+			"name": "code",
+			"type": "java.lang.String",
+			"required": true,
+			"description": "返回码，0代表没有错误"
+		},
+		{
+			"name": "msg",
+			"type": "java.lang.String",
+			"required": true,
+			"description": "返回信息"
+		},
+		{
+			"name": "nickname",
+			"type": "java.lang.String",
+			"required": true,
+			"description": "昵称"
+		},
+		{
+			"name": "headerPic",
+			"type": "java.lang.String",
+			"required": true,
+			"description": "微信头像"
+		},
+		{
+			"name": "mobile",
+			"type": "java.lang.String",
+			"required": false,
+			"description": "手机号"
+		}
+	]
+}

@@ -1,0 +1,22 @@
+{
+	"items": [
+		{
+			"name": "lineId",
+			"type": "java.lang.Long",
+			"required": true,
+			"description": "活动线路ID"
+		},
+		{
+			"name": "pageSize",
+			"type": "java.lang.Integer",
+			"required": true,
+			"description": "每页显示个数"
+		},
+		{
+			"name": "pageNum",
+			"type": "java.lang.Integer",
+			"required": true,
+			"description": "页数"
+		}
+	]
+}

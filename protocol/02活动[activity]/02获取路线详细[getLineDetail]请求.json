@@ -1,0 +1,13 @@
+{
+	"items": [
+		{
+			"name": "lineId",
+			"type": "java.lang.Long",
+			"required": true,
+			"description": "线路ID"
+		}
+	],
+	"demo": {
+		"lineId": 1
+	}
+}

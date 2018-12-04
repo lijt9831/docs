@@ -1,0 +1,38 @@
+{
+	"items": [
+		{
+			"name": "signedNo",
+			"type": "java.lang.Integer",
+			"required": true,
+			"description": "已报名人数"
+		},
+		{
+			"name": "signMaxNo",
+			"type": "java.lang.Integer",
+			"required": true,
+			"description": "最大报名人数"
+		},
+		{
+			"name": "signedList",
+			"type":"java.util.List",
+			"required": true,
+			"description": "已报名列表",
+			"child": {
+				"items": [
+					{
+						"name": "nickname",
+						"type": "java.lang.String",
+						"required": true,
+						"description": "昵称"
+					},
+					{
+						"name": "headerPic",
+						"type": "java.lang.String",
+						"required": true,
+						"description": "微信头像"
+					}
+				]
+			}
+		}
+	]
+}

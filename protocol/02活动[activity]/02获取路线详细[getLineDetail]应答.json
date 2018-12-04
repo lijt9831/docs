@@ -1,0 +1,126 @@
+{
+	"items": [
+		{
+			"name": "code",
+			"type": "java.lang.String",
+			"required": true,
+			"description": "返回码，0代表没有错误"
+		},
+		{
+			"name": "msg",
+			"type": "java.lang.String",
+			"required": true,
+			"description": "返回信息"
+		},
+		{
+			"name": "picList",
+			"type":"java.util.List",
+			"required": true,
+			"description": "图片列表",
+			"child": {
+				"items": [
+					{
+						"name": "picPath",
+						"type": "java.lang.String",
+						"required": true,
+						"description": "图片地址"
+					}
+				]
+			}
+		},
+		{
+			"name": "carList",
+			"type":"java.util.List",
+			"required": true,
+			"description": "推荐车辆列表，当列表元素数量等于0时不显示",
+			"child": {
+				"items": [
+					{
+						"name": "iconPath",
+						"type": "java.lang.String",
+						"required": true,
+						"description": "推荐车型图标链接"
+					},
+					{
+						"name": "car",
+						"type": "java.lang.String",
+						"required": true,
+						"description": "推荐车型"
+					}
+				]
+			}
+		},
+		{
+			"name": "personList",
+			"type":"java.util.List",
+			"required": true,
+			"description": "推荐人群列表，当列表元素数量等于0时不显示",
+			"child": {
+				"items": [
+					{
+						"name": "person",
+						"type": "java.lang.String",
+						"required": true,
+						"description": "推荐人群"
+					}
+				]
+			}
+		},
+		{
+			"name": "equipmentList",
+			"type":"java.util.List",
+			"required": true,
+			"description": "推荐装备列表，当列表元素数量等于0时不显示",
+			"child": {
+				"items": [
+					{
+						"name": "equipment",
+						"type": "java.lang.String",
+						"required": true,
+						"description": "推荐装备"
+					}
+				]
+			}
+		},
+		{
+			"name": "fitList",
+			"type":"java.util.List",
+			"required": true,
+			"description": "活动类型列表，当列表元素数量等于0时不显示",
+			"child": {
+				"items": [
+					{
+						"name": "fit",
+						"type": "java.lang.String",
+						"required": true,
+						"description": "适合哪些类型的活动"
+					}
+				]
+			}
+		},
+		{
+			"name": "lineInfo",
+			"type": "java.lang.String",
+			"required": true,
+			"description": "paramLength:长度（千米）,paramMaxGradient:最大坡度（度）,paramElevation:海拔（米）,paramDowntownDistance:距离市中心千米（千米）"
+		},
+		{
+			"name": "roadCondition",
+			"type": "java.lang.String",
+			"required": true,
+			"description": "paramRoadCondition:路况，百分比"	
+		},
+		{
+			"name": "wannaNum",
+			"type": "java.lang.Integer",
+			"required": true,
+			"description": "想去的人数"
+		},
+		{
+			"name": "wanted",
+			"type": "java.lang.String",
+			"required": true,
+			"description": "0未设置想去，1已设置想去"
+		}
+	]
+}

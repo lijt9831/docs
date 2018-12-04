@@ -1,0 +1,56 @@
+{
+	"items": [
+		{
+			"name": "msgList",
+			"type":"java.util.List",
+			"required": true,
+			"description": "留言列表",
+			"child": {
+				"items": [
+					{
+						"name": "activityId",
+						"type": "java.lang.Long",
+						"required": true,
+						"description": "活动ID"
+					},
+					{
+						"name": "leftnickname",
+						"type": "java.lang.String",
+						"required": true,
+						"description": "留言人昵称"
+					},
+					{
+						"name": "talkId",
+						"type": "java.lang.Long",
+						"required": false,
+						"description": "回复哪个评论"
+					},
+					{
+						"name": "beleftnickname",
+						"type": "java.lang.String",
+						"required": true,
+						"description": "被留言人昵称"
+					},
+					{
+						"name": "content",
+						"type": "java.lang.String",
+						"required": false,
+						"description": "文本评论"
+					},
+					{
+						"name": "pic",
+						"type": "java.lang.String",
+						"required": false,
+						"description": "图片评论"
+					},
+					{
+						"name": "date",
+						"type": "java.lang.String",
+						"required": true,
+						"description": "留言时间 yyyy-MM-dd HH:mm"
+					}
+				]
+			}
+		}
+	]
+}

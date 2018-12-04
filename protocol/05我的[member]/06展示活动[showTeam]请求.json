@@ -1,0 +1,44 @@
+{
+	"items": [
+		{
+			"name": "leaderMark",
+			"type": "java.lang.Integer",
+			"required": true,
+			"description": "领队评星"
+		},
+		{
+			"name": "activityMark",
+			"type": "java.lang.Integer",
+			"required": true,
+			"description": "活动评星"
+		},
+		{
+			"name": "lineMark",
+			"type": "java.lang.Integer",
+			"required": true,
+			"description": "路线评星"
+		},
+		{
+			"name": "content",
+			"type": "java.lang.String",
+			"required": true,
+			"description": "文本评论"
+		},
+		{
+			"name": "picList",
+			"type":"java.util.List",
+			"required": true,
+			"description": "图片相对地址列表",
+			"child": {
+				"items": [
+					{
+						"name": "pic",
+						"type": "java.lang.String",
+						"required": true,
+						"description": "图片相对地址"
+					}
+				]
+			}
+		}
+	]
+}

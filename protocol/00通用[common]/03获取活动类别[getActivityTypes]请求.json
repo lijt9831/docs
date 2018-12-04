@@ -1,0 +1,10 @@
+{
+	"items": [
+		{
+			"name":"lineId",
+			"type": "java.lang.Long",
+			"required": true,
+			"description": "活动线路ID"
+		}
+	]
+}

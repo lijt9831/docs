@@ -1,0 +1,74 @@
+{
+	"items": [
+		{
+			"name": "code",
+			"type": "java.lang.String",
+			"required": true,
+			"description": "返回码，0代表没有错误"
+		},
+		{
+			"name": "msg",
+			"type": "java.lang.String",
+			"required": true,
+			"description": "返回信息"
+		},
+		{
+			"name": "activityCoverList",
+			"type":"java.util.List",
+			"required": true,
+			"description": "活动封面列表",
+			"child": {
+				"items": [
+					{
+						"name": "id",
+						"type": "long",
+						"required": true,
+						"description": "活动ID"
+					},
+					{
+						"name": "status",
+						"type": "java.lang.String",
+						"required": true,
+						"description": "活动状态，比如：报名中"
+					},
+					{
+						"name": "coverPicPath",
+						"type": "java.lang.String",
+						"required": true,
+						"description": "活动封面图片地址"
+					},
+					{
+						"name": "title",
+						"type": "java.lang.String",
+						"required": true,
+						"description": "活动标题"
+					},
+					{
+						"name": "date",
+						"type": "java.lang.String",
+						"required": true,
+						"description": "活动日期 yyyy-MM-dd"
+					},
+					{
+						"name": "leaderNickname",
+						"type": "java.lang.String",
+						"required": true,
+						"description": "领队昵称"
+					},
+					{
+						"name": "leaderHeaderPic",
+						"type": "java.lang.String",
+						"required": true,
+						"description": "领队头像"
+					},
+					{
+						"name": "leaderStatus",
+						"type": "java.lang.String",
+						"required": true,
+						"description": "领队认证状态"
+					}
+				]
+			}
+		}
+	]
+}

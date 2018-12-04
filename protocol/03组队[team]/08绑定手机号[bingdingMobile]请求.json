@@ -1,0 +1,20 @@
+{
+	"items": [
+		{
+			"name": "encryptedData",
+			"type": "java.lang.String",
+			"required": true,
+			"description": "包括敏感数据在内的完整用户信息的加密数据，详细见加密数据解密算法"
+		},
+		{
+			"name": "iv",
+			"type": "java.lang.String",
+			"required": true,
+			"description": "加密算法的初始向量，详细见加密数据解密算法"
+		}
+	],
+	"demo": {
+		"encryptedData": "eeeeeeeeeeeeeeeeeee",
+		"iv": "aaaaaaaaa"
+	}
+}

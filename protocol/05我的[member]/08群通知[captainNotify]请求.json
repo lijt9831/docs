@@ -1,0 +1,16 @@
+{
+	"items": [
+		{
+			"name": "activityId",
+			"type": "java.lang.Long",
+			"required": true,
+			"description": "活动ID"
+		},
+		{
+			"name": "content",
+			"type": "java.lang.String",
+			"required": true,
+			"description": "文本通知"
+		}
+	]
+}

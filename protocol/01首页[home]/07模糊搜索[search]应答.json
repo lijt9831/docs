@@ -1,0 +1,64 @@
+{
+	"items": [
+		{
+			"name": "code",
+			"type": "java.lang.String",
+			"required": true,
+			"description": "返回码，0代表没有错误"
+		},
+		{
+			"name": "msg",
+			"type": "java.lang.String",
+			"required": true,
+			"description": "返回信息"
+		},
+		{
+			"name": "matchList",
+			"type":"java.util.List",
+			"required": true,
+			"description": "匹配项列表",
+			"child": {
+				"items": [
+					{
+						"name": "id",
+						"type": "long",
+						"required": true,
+						"description": "项ID"
+					},
+					{
+						"name": "title",
+						"type": "java.lang.String",
+						"required": true,
+						"description": "项标题"
+					},
+					{
+						"name": "type",
+						"type": "java.lang.String",
+						"required": true,
+						"description": "项类型"
+					}
+				]
+			}
+		}
+	],
+	"demoSuccess": {
+		"code": "0",
+		"msg": "success",
+		"matchList": [
+			{
+				"id": 1,
+				"type": "活动",
+				"title": "热门山海风光搬运工"
+			},
+			{
+				"id": 1,
+				"type": "线路",
+				"title": "热门一号线"
+			}
+		]
+	},
+	"demoError": {
+		"code": "1",
+		"msg": "失败"
+	}
+}

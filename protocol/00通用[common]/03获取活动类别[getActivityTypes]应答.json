@@ -1,0 +1,58 @@
+{
+	"items": [
+		{
+			"name": "code",
+			"type": "java.lang.String",
+			"required": true,
+			"description": "返回码，0代表没有错误"
+		},
+		{
+			"name": "msg",
+			"type": "java.lang.String",
+			"required": true,
+			"description": "返回信息"
+		},
+		{
+			"name": "activityTypeList",
+			"type":"java.util.List",
+			"required": true,
+			"description": "活动类别列表",
+			"child": {
+				"items": [
+					{
+						"name": "id",
+						"type": "java.lang.Long",
+						"required": true,
+						"description": "活动类型ID"
+					},
+					{
+						"name": "type",
+						"type": "java.lang.String",
+						"required": true,
+						"description": "活动类型"
+					},
+					{
+						"name": "modelCode",
+						"type": "java.lang.String",
+						"required": true,
+						"description": "活动模板号"
+					}
+				]
+			}
+		}
+	],
+	"demoSuccess": {
+		"code": "0",
+		"msg": "success",
+		"activityTypeList": [
+			{
+				"id": "1",
+				"type": "徒步"
+			}
+		]
+	},
+	"demoError": {
+		"code": "1",
+		"msg": "failed"
+	}
+}

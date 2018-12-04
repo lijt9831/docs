@@ -1,0 +1,31 @@
+{
+	"items": [
+		{
+			"name": "code",
+			"type": "java.lang.String",
+			"required": true,
+			"description": "返回码，0代表没有错误"
+		},
+		{
+			"name": "msg",
+			"type": "java.lang.String",
+			"required": true,
+			"description": "返回信息"
+		},
+		{
+			"name": "mobile",
+			"type": "java.lang.String",
+			"required": true,
+			"description": "解密获取的手机号"
+		}
+	],
+	"demoSuccess": {
+		"code": "0",
+		"msg": "绑定手机号成功",
+		"mobile": "13444444444"
+	},
+	"demoError": {
+		"code": "1",
+		"msg": "失败"
+	}
+}

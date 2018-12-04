@@ -1,0 +1,13 @@
+{
+	"items": [
+		{
+			"name": "keyword",
+			"type": "java.lang.String",
+			"required": true,
+			"description": "搜索关键词"
+		}
+	],
+	"demo": {
+		"keyword": "热门"
+	}
+}

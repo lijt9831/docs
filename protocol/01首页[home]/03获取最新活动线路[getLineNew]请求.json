@@ -1,0 +1,16 @@
+{
+	"items": [
+		{
+			"name": "pageSize",
+			"type": "java.lang.Integer",
+			"required": true,
+			"description": "每页显示个数"
+		},
+		{
+			"name": "pageNum",
+			"type": "java.lang.Integer",
+			"required": true,
+			"description": "页数"
+		}
+	]
+}

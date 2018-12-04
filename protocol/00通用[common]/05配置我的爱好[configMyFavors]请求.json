@@ -1,0 +1,48 @@
+{
+	"items": [
+		{
+			"name": "delList",
+			"type": "java.util.List",
+			"required": true,
+			"description": "删除的活动类型ID列表",
+			"child": {
+				"items": [
+					{
+						"name": "id",
+						"type": "java.lang.Long",
+						"required": true,
+						"description": "删除的活动类型ID"
+					}
+				]
+			}
+		},
+		{
+			"name": "addList",
+			"type": "java.util.List",
+			"required": true,
+			"description": "添加的活动类型ID列表",
+			"child": {
+				"items": [
+					{
+						"name": "id",
+						"type": "java.lang.Long",
+						"required": true,
+						"description": "添加的活动类型ID"
+					}
+				]
+			}
+		}
+	],
+	"demo": {
+		"addList": [
+			{
+				"id": 1
+			}
+		],
+		"delList": [
+			{
+				"id": 2
+			}
+		]
+	}
+}

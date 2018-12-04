@@ -1,0 +1,26 @@
+{
+	"items": [
+		{
+			"name": "seenList",
+			"type":"java.util.List",
+			"required": true,
+			"description": "看过的人",
+			"child": {
+				"items": [
+					{
+						"name": "nickname",
+						"type": "java.lang.String",
+						"required": true,
+						"description": "昵称"
+					},
+					{
+						"name": "headerPic",
+						"type": "java.lang.String",
+						"required": true,
+						"description": "微信头像"
+					}
+				]
+			}
+		}
+	]
+}

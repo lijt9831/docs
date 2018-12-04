@@ -1,0 +1,123 @@
+{
+	"items": [
+		{
+			"name": "activityTypeId",
+			"type": "java.lang.Long",
+			"required": true,
+			"description": "活动类型Id"
+		},
+		{
+			"name": "lineId",
+			"type": "java.lang.Long",
+			"required": false,
+			"description": "关联的活动线路Id"
+		},
+		{
+			"name": "title",
+			"type": "java.lang.String",
+			"required": true,
+			"description": "组队主题"
+		},
+		{
+			"name": "activityStart",
+			"type": "java.lang.String",
+			"required": true,
+			"description": "活动开始时间",
+			"pattern": "yyyy-MM-dd HH:mm:ss"
+		},
+		{
+			"name": "activityEnd",
+			"type": "java.lang.String",
+			"required": true,
+			"description": "活动结束时间",
+			"pattern": "yyyy-MM-dd HH:mm:ss"
+		},
+		{
+			"name": "gatherTime",
+			"type": "java.lang.String",
+			"required": true,
+			"description": "集结时间"
+		},
+		{
+			"name": "gatherPoint",
+			"type": "java.lang.String",
+			"required": true,
+			"description": "集结地点"
+		},
+		{
+			"name": "maxPeopleNo",
+			"type": "java.lang.String",
+			"required": true,
+			"description": "最大报名人数"
+		},
+		{
+			"name": "frontMoney",
+			"type": "java.lang.String",
+			"required": true,
+			"description": "报名定金，精度分，单位元，比如 1.00"
+		},
+		{
+			"name": "signEnd",
+			"type": "java.lang.String",
+			"required": true,
+			"description": "报名截止日期",
+			"pattern": "yyyy-MM-dd HH:mm:ss"
+		},
+		{
+			"name": "powerCondition",
+			"type": "java.lang.String",
+			"required": true,
+			"description": "体力要求"
+		},
+		{
+			"name": "equipConditionList",
+			"type": "java.util.List",
+			"required": true,
+			"description": "装备要求，选中的列表",
+			"child": {
+				"items": [
+					{
+						"name": "id",
+						"type": "java.lang.Long",
+						"required": true,
+						"description": "装备ID"
+					}
+				]
+			}
+		},
+		{
+			"name": "remark",
+			"type": "java.lang.String",
+			"required": true,
+			"description": "备注"
+		},
+		{
+			"name": "scheduleList",
+			"type": "java.util.List",
+			"required": true,
+			"description": "行程列表",
+			"child": {
+				"items": [
+					{
+						"name": "day",
+						"type": "java.lang.Integer",
+						"required": true,
+						"description": "第几天"
+					},
+					{
+						"name": "destination",
+						"type": "java.lang.String",
+						"required": true,
+						"description": "地图定位参数 json 字符串"
+					},
+					{
+						"name": "desc",
+						"type": "java.lang.String",
+						"required": true,
+						"description": "行程描述"
+					}
+				]
+			}
+		}
+	]
+}

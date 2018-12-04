@@ -1,0 +1,71 @@
+{
+	"items": [
+		{
+			"name": "code",
+			"type": "java.lang.String",
+			"required": true,
+			"description": "返回码，0代表没有错误"
+		},
+		{
+			"name": "msg",
+			"type": "java.lang.String",
+			"required": true,
+			"description": "返回信息"
+		},
+		{
+			"name": "lineList",
+			"type":"java.util.List",
+			"required": true,
+			"description": "线路封面列表",
+			"child": {
+				"items": [
+					{
+						"name": "id",
+						"type": "java.lang.Long",
+						"required": true,
+						"description": "线路ID"
+					},
+					{
+						"name": "title",
+						"type": "java.lang.String",
+						"required": true,
+						"description": "线路标题"
+					},
+					{
+						"name": "coverPicPath",
+						"type": "java.lang.String",
+						"required": true,
+						"description": "线路封面图片地址"
+					},
+					{
+						"name": "eyeNo",
+						"type": "java.lang.Integer",
+						"required": true,
+						"description": "看过人数 "
+					},
+					{
+						"name": "location",
+						"type": "java.lang.String",
+						"required": true,
+						"description": "位置信息 "
+					}
+				]
+			}
+		}
+	],
+	"demoSuccess": {
+		"code": "0",
+		"msg": "success",
+		"lineList": [
+			{
+				"id": 1,
+				"coverPicPath": "http://www.ee.rr/sssssss",
+				"title": "山海风光搬运工"
+			}
+		]
+	},
+	"demoError": {
+		"code": "1",
+		"msg": "失败"
+	}
+}

@@ -1,0 +1,22 @@
+{
+	"items": [
+		{
+			"name": "activityTypeId",
+			"type": "java.lang.Long",
+			"required": false,
+			"description": "活动类型ID"
+		},
+		{
+			"name": "pageSize",
+			"type": "java.lang.Integer",
+			"required": true,
+			"description": "每页显示个数"
+		},
+		{
+			"name": "pageNum",
+			"type": "java.lang.Integer",
+			"required": true,
+			"description": "页数"
+		}
+	]
+}

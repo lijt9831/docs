@@ -1,0 +1,59 @@
+{
+	"items": [
+		{
+			"name": "code",
+			"type": "java.lang.String",
+			"required": true,
+			"description": "返回码，0代表没有错误"
+		},
+		{
+			"name": "msg",
+			"type": "java.lang.String",
+			"required": true,
+			"description": "返回信息"
+		},
+		{
+			"name": "loopPicList",
+			"type":"java.util.List",
+			"required": true,
+			"description": "轮播图列表",
+			"child": {
+				"items": [
+					{
+						"name": "title",
+						"type": "java.lang.String",
+						"required": true,
+						"description": "轮播图标题"
+					},
+					{
+						"name": "path",
+						"type": "java.lang.String",
+						"required": true,
+						"description": "轮播图图片地址"
+					},
+					{
+						"name": "href",
+						"type": "java.lang.String",
+						"required": false,
+						"description": "轮播图链接"
+					}
+				]
+			}
+		}
+	],
+	"demoSuccess": {
+		"code": "0",
+		"msg": "success",
+		"loopPicList": [
+			{
+				"path": "http://www.ee.rr/www",
+				"title": "精彩滑雪",
+				"href": "http://www.ee.rr/xxxxxxxx"
+			}
+		]
+	},
+	"demoError": {
+		"code": "1",
+		"msg": "失败"
+	}
+}

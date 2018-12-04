@@ -1,0 +1,58 @@
+{
+	"items": [
+		{
+			"name": "code",
+			"type": "java.lang.String",
+			"required": true,
+			"description": "返回码，0代表没有错误"
+		},
+		{
+			"name": "msg",
+			"type": "java.lang.String",
+			"required": true,
+			"description": "返回信息"
+		},
+		{
+			"name": "activityTypeList",
+			"type":"java.util.List",
+			"required": true,
+			"description": "活动类别列表",
+			"child": {
+				"items": [
+					{
+						"name": "id",
+						"type": "java.lang.Long",
+						"required": true,
+						"description": "活动类型ID"
+					},
+					{
+						"name": "type",
+						"type": "java.lang.String",
+						"required": true,
+						"description": "活动类型"
+					},
+					{
+						"name": "checked",
+						"type": "java.lang.String",
+						"required": true,
+						"description": "内容为0时，为用户未选中的偏好类型;内容为1时，为用户已选中的偏好类型"
+					}
+				]
+			}
+		}
+	],
+	"demoSuccess": {
+		"code": "0",
+		"msg": "success",
+		"activityTypeList": [
+			{
+				"id": "1",
+				"type": "徒步"
+			}
+		]
+	},
+	"demoError": {
+		"code": "1",
+		"msg": "failed"
+	}
+}

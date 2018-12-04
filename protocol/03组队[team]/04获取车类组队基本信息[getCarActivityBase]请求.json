@@ -1,0 +1,10 @@
+{
+	"items": [
+		{
+			"name": "activityId",
+			"type": "java.lang.Long",
+			"required": true,
+			"description": "活动ID"
+		}
+	]
+}

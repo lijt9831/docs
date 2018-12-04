@@ -1,0 +1,57 @@
+{
+	"items": [
+		{
+			"name": "code",
+			"type": "java.lang.String",
+			"required": true,
+			"description": "返回码，0代表没有错误"
+		},
+		{
+			"name": "msg",
+			"type": "java.lang.String",
+			"required": true,
+			"description": "返回信息"
+		},
+		{
+			"name": "msgList",
+			"type":"java.util.List",
+			"required": true,
+			"description": "消息列表",
+			"child": {
+				"items": [
+					{
+						"name": "id",
+						"type": "java.lang.Long",
+						"required": true,
+						"description": "消息ID"
+					},
+					{
+						"name": "content",
+						"type": "java.lang.String",
+						"required": true,
+						"description": "消息内容"
+					},
+					{
+						"name": "date",
+						"type": "java.lang.String",
+						"required": true,
+						"description": "消息时间",
+						"pattern": "yyyy/MM/dd HH:mm:ss"
+					},
+					{
+						"name": "type",
+						"type": "java.lang.String",
+						"required": true,
+						"description": "消息类型：1为系统消息（系统自动发送的消息提醒，如留言评论提醒，活动提醒），2为用户消息（用户发送的消息，如领队群通知）"
+					},
+					{
+						"name": "status",
+						"type": "java.lang.String",
+						"required": true,
+						"description": "消息状态，0未读1已读"
+					}
+				]
+			}
+		}
+	]
+}

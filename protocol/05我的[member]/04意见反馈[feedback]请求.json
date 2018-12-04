@@ -1,0 +1,13 @@
+{
+	"items": [
+		{
+			"name": "feedback",
+			"type": "java.lang.String",
+			"required": true,
+			"description": "意见"
+		}
+	],
+	"demo": {
+		"feedback": "你们得提高服务你们得提高服务你们得提高服务你们得提高服务你们得提高服务"
+	}
+}
